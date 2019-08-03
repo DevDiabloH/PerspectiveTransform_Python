@@ -22,7 +22,12 @@ def mouse_handler(event, x, y, flags, param):
     src.append([x, y])
 
     for xx, yy in src:
-      cv2.circle(img, center=(xx, yy), radius=5, color=(0, 255, 0), thickness=-1, lineType=cv2.LINE_AA)
+      cv2.circle(img,
+                 center=(xx, yy),
+                 radius=5,
+                 color=(0, 255, 0),
+                 thickness=-1,
+                 lineType=cv2.LINE_AA)
 
     cv2.imshow('img', img)
 
