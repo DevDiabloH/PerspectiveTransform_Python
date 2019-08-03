@@ -1,7 +1,7 @@
 import cv2, os
 import numpy as np
 
-img_path = './img/yourPictureName.jpg'
+img_path = './img/sample.jpg'
 filename, ext = os.path.splitext(os.path.basename(img_path))
 ori_img = cv2.imread(img_path)
 
